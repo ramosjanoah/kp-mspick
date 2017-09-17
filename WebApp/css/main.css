@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url('../fonts/Proxima Nova Regular.woff');
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../fonts/Proxima Nova Bold.woff');
+}
+body {
+  font-family: 'ProximaNovaRegular';
+  background-color: #E5E5E5;
+}
+h1, h2 {
+  text-align:center;
+}
+span {
+  display: block;
+  margin-left: 5%;
+}
+select {
+  display:none;
+  margin-left:10%;
+  width:200px;
+  font-size: 16px;
+}
+.input-radio {
+  display: inline-block;
+  margin-left: 10%;
+  margin-bottom: 15px;
+  width:24px;
+  height:24px;
+  position:relative;
+  top:6px;
+}
+.input-radio-2 {
+  display: inline-block;
+  margin-bottom: 15px;
+  width:24px;
+  height:24px;
+  position:relative;
+  top:6px;
+}
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.configuration {
+  position: absolute;
+  float:left;
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+  background-color: #000;
+  color: #fff;
+}
+.content_graph {
+  float:right;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 80%;
+  background-color: #ccc;
+}
+.label_option {
+  margin-left: 10%;
+  margin-bottom: 10px;
+  font-size: 24px;
+  display: block;
+  color: #fff;
+  margin-top: 30px;
+}
+.choose {
+  text-align: center;
+  vertical-align: center;
+  line-height: 40px;
+  display: inline-block; 
+  height: 40px;
+  width: 200px;
+  background:url('../img/dropdown.png') right center no-repeat;
+  padding:0px 0px 0px 0px;
+  border:solid 1px #eee;
+  margin-left: 10%;
+  color: grey;
+  font-size: 16px;
+  background-color: #fff; 
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+  box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+}
+.hover {
+  background:grey;
+  color:white;
+}
+.button {
+  background-color: #fff; /* Green */
+  border: none;
+  color: grey;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left:10%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.button_build {
+  margin-top: 40px;
+}
+.graph {
+  border-style: solid;
+  border-width: 5px;
+  width:900px;
+  height:600px;
+  margin:0 auto;
+  margin-bottom: 20px;
+}
+.explanation {
+  border-style: solid;
+  border-width: 5px;
+  width:700px;
+  min-height:400px;
+  margin:0 auto;
+  margin-bottom: 20px;
+}
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: black ;
+  stroke-width: 0px;
+}
+svg {
+  border: 1px solid #000;
+}
+.hyperparameter {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+.cluster {
+  display: inline-block;
+  width: 49%;
+}

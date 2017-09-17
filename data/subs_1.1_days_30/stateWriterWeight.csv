@@ -1,0 +1,2 @@
+,graphSubscriptionFactor,graphNormalizationUpperLimit,graphNormalizationLowerLimit,graphDayFactorSmoothness,subscriptionFactor,normalizationUpperLimit,normalizationLowerLimit,dayFactorSmoothness
+0,1.1,10.0,1.0,30.0,1.1,10.0,1.0,30.0

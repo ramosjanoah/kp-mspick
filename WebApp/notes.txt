@@ -1,0 +1,19 @@
+notes: 
+
+
+# give some title to node
+    node.append("title")
+    .text(function(d) { return d.id; });
+
+
+# give different closeness, and different color:
+  var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+var node = svg.append("g")
+    .attr("class", "nodes")
+  .selectAll("circle")
+  .data(graph.nodes)
+  .enter().append("circle")
+    .attr("r", function(d) { return d.closeness/10 + 5; }) # <-- this part
+    .attr("fill", function(d) { return color(d.cluster); }) # <-- and this part
+

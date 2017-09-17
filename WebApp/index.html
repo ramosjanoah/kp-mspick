@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="configuration">
+        <h1> Graph Configuration </h1>
+        <label class="label_option">Category</label>
+        <input id="category_id_radio" class="input-radio" type="radio" name="category_radio" value="id" checked>
+          <label for="category_id_radio">ID</label>
+
+        <input id="category_name_radio" class="input-radio-2" type="radio" name="category_radio" value="name">
+          <label for="category_name_radio">Name</label>
+
+        <div id="select_id">
+          <label class="choose" id='choose_id' for='options'>Select ID</label>
+          <br clear='all' />
+          <select id='options_id' size="5" name="options_id">
+          </select>
+        </div>
+        <div id="select_name">
+          <label class="choose" id='choose_name' for='options'>Select Name</label>
+          <br clear='all' />
+          <select id='options_name' size="5" name="options_name">
+          </select>
+        </div>
+
+        <label class="label_option">Price</label>
+        <label class="choose" id='choose_price' for='options'>On</label>
+        <br clear='all' />
+        <select id='options_price' size="2" name="options_price">
+          <option value="On">On</option>
+          <option value="Off">Off</option>
+        </select>
+        
+        <label class="label_option">Quantity</label>
+        <label class="choose" id='choose_quantity' for='options'>On</label>
+        <br clear='all' />
+        <select id='options_quantity' size="2" name="options_quantity">
+          <option value="On">On</option>
+          <option value="Off">Off</option>
+        </select>
+        
+        <label class="label_option">Days</label>
+        <label class="choose" id='choose_days' for='options'>On</label>
+        <br clear='all' />
+        <select id='options_days' size="2" name="options_days">
+          <option value="On">On</option>
+          <option value="Off">Off</option>
+        </select>
+      
+        <label class="label_option">Subscription</label>
+        <label class="choose" id='choose_subscription' for='options'>On</label>
+        <br clear='all' />
+        <select id='options_subscription' size="2" name="options_subscription">
+          <option value="On">On</option>
+          <option value="Off">Off</option>
+        </select>
+
+        <button class="button button_build" onclick="build()" type="button" id="build">Build</button>
+        <button class="button" type="button" onclick="refresh()" id="refresh">Refresh</button>
+      </div>
+      <div id="content_graph" class="content_graph">
+        <h1> Graph Cluster</h1>
+        <div id="graph" class="graph">
+          <svg width="900" height="600"></svg>
+        </div>
+        <div class="explanation" id="explanation">
+          <h2> Hyperparameter </h2>
+          <div id="hyperparameter" class="hyperparameter">
+            <span id="category_id">Category ID : </span><br>
+            <span id="category_name">Category Name : </span><br>
+            <span id="price">Price : </span><br>
+            <span id="quantity">Quantity : </span><br>
+            <span id="nf">Normalization Function : </span><br>
+            <span id="tf">Time Function : </span><br>
+            <span id="df">Days Factor : </span><br>
+            <span id="sf">Subscription Factor : </span><br>
+            <span id="md">Maximum Distance : </span><br>
+            <span id="mn">Minimal Neighbor : </span><br>
+            <span id="mc">Minimal Closeness : </span><br>
+          </div>
+          <h2> Graph Detail </h2>
+          <div id="graph_detail">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>      
+  </body>
+</html>
